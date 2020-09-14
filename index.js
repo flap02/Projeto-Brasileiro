@@ -66,21 +66,10 @@ client.on("ready", () => {
   channel.send(content);
   console.log("É para se inscrever mesmo! Saco pela.");
 })
-client.on("ready", () => {
-  var content = "Inscreva-se no canal Flapkz!";
-  var channel = client.guilds.cache
-    .get("754559607858528297") // Id do Servidor
-    .channels.cache.get("754827069866901524"); //Id do canal onde a mensagem será enviada
-  setInterval(function() {
-    channel.send(content); 
-  }, 1000 * 60 * 60 * 1); 
-  channel.send(content);
-  console.log("É para se inscrever mesmo! Saco pela.");
-})
 client.on("guildMemberAdd", async (member) => { 
 
-  let guild = await client.guilds.cache.get("754559607858528297"); // Id do Servidor
-  let channel = await client.channels.cache.get("754560593574232114"); // Id do canal de boas vindas
+  let guild = await client.guilds.cache.get("732447910070976643"); // Id do Servidor
+  let channel = await client.channels.cache.get("732449554791923733"); // Id do canal de boas vindas
   let emoji = await member.guild.emojis.cache.find(emoji => emoji.name === ":heart:");
   if (guild != member.guild) {
     return console.log("Sem boas-vindas pra você! Sai daqui saco pela.");
@@ -100,8 +89,8 @@ client.on("guildMemberAdd", async (member) => {
 });
 client.on("guildMemberRemove", async (member) => { 
 
-  let guild = await client.guilds.cache.get("754559607858528297"); // Id do Servidor
-  let channel = await client.channels.cache.get("754560594937380965"); // Id do canal de saida
+  let guild = await client.guilds.cache.get("732447910070976643"); // Id do Servidor
+  let channel = await client.channels.cache.get("732450003016220750"); // Id do canal de saida
   let emoji = await member.guild.emojis.cache.find(emoji => emoji.name === ":broken_heart:");
   if (guild != member.guild) {
     return console.log("Até a próxima! :()");
