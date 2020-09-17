@@ -5,9 +5,9 @@ exports.run = async (bot, message, argumentos, arg_texto, chat) => {
     .setColor("GREEN")
     .setTitle("**Ajuda**")
     .setDescription(`Olá, meu prefix é ! Este é meu centro de comandos, abaixo você poderá ver todos meus comandos, separados por categorias.`)
-  .addField("👮‍♂️ - **MODERAÇÃO**", "Ban, unban, kick e clear")
-   .addField("📁 - **UTILIDADE**", "Help, ping, say, ticket e uptime")
-  .addField("🎉 - **DIVERSÃO**", "Kiss e coinflip")
+  .addField("👮‍♂️ - **MODERAÇÃO**", "Ban, unban, kick, lock, unlock e clear")
+   .addField("📁 - **UTILIDADE**", "Help, ping, say, ideia ticket e uptime")
+  .addField("🎉 - **DIVERSÃO**", "Kiss, slap e coinflip")
     .setTimestamp()
     .setFooter(`Comando solicitado por ${message.member.displayName}`, message.author.displayAvatarURL({Size: 32}))   
   
